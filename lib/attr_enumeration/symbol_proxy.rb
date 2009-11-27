@@ -1,7 +1,7 @@
 module AttrEnumeration
 module SymbolProxy
     class BlankSlate
-      instance_methods.each {|m| undef_method m unless m =~ /^__|object_id|should|should_not/}
+      instance_methods.each {|m| undef_method m unless m =~ /^__|object_id|should|should_not|send/}
     end
 
     class Base < BlankSlate

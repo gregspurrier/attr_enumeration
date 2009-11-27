@@ -9,4 +9,5 @@ ActiveRecord::Base.establish_connection(db_config)
 
 class TestObject < ActiveRecord::Base
   attr_enumeration :color => [:red, :green, :blue]
+  attr_enumeration :level => {:bronze => 1, :silver => 2, :gold => 3}
 end
