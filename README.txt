@@ -29,7 +29,8 @@ The repository for attr_enumeration is hosted at GitHub:
   Web page:   http://github.com/gregspurrier/attr_enumeration
   Clone URL:  git://github.com/gregspurrier/attr_enumeration.git
 
-== Supported Ruby Versions
-attr_enumeration has been tested with the following Ruby Versions:
-  - 1.8.7
-  - 1.9.1
+== Supported Versions
+attr_enumeration has been testing with:
+  - ActiveRecord 2.3.4
+  - Ruby 1.8.7
+  - Ruby 1.9.1

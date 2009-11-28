@@ -26,7 +26,10 @@ module AttrEnumeration
         # Generate a writer method that takes symbols
         writer_sym = "#{attr_name}=".to_sym
         define_method writer_sym,
-            lambda { |value| write_attribute(attr_name, mapping[value]) }
+            lambda { |value|
+              value = value.to_sym if value
+              write_attribute(attr_name, mapping[value])
+            }
       end
     end
   end

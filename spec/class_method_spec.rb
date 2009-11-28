@@ -34,6 +34,16 @@ describe 'enumeration specified by array of symbols' do
       result.should == :green
     end
 
+    it "should support assignment to string" do
+      @obj.color = 'blue'
+      @obj.color.should be_blue
+    end
+
+    it "should support assignment to nil" do
+      @obj.color = nil
+      @obj.color.should be_nil
+    end
+
     it "should be nil for an unassigned attribute" do
       obj = TestObject.new
       obj.color.should be_nil
