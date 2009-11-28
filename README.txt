@@ -30,7 +30,7 @@ The repository for attr_enumeration is hosted at GitHub:
   Clone URL:  git://github.com/gregspurrier/attr_enumeration.git
 
 == Supported Versions
-attr_enumeration has been testing with:
+attr_enumeration has been tested with:
   - ActiveRecord 2.3.4
   - Ruby 1.8.7
   - Ruby 1.9.1
